@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     index: "./src/index.js",
+    dropdown: "./src/component/dropdown.js",
+    dropdownItem: "./src/component/dropdownItem.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
