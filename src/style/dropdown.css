@@ -1,0 +1,11 @@
+.dropdown-body {
+  position: absolute;
+  min-width: 160px;
+  max-width: 10%;
+  height: 160px;
+  background-color: white;
+  border: 1px rgb(143, 143, 143) solid;
+  display: inline-block;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
