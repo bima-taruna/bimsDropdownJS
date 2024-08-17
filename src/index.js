@@ -6,16 +6,16 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 (function () {
-  const content = document.getElementById("content");
+  const parent = document.querySelector(".dropdown-parent");
   const testButton = document.getElementById("dropdown-test-button");
   testButton.addEventListener("click", () => {
     const newDropdown = new Dropdown();
     if (!testButton.classList.contains("activated")) {
       testButton.classList.add("activated");
-      newDropdown.appendToParent(content);
+      newDropdown.appendToParent(parent);
     } else {
       testButton.classList.remove("activated");
-      newDropdown.removeFromParent(content);
+      newDropdown.removeFromParent(parent);
     }
   });
 })();
