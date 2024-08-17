@@ -1,3 +1,5 @@
+import "../style/dropdown.css";
+
 class Dropdown {
   constructor() {
     this.body = document.createElement("div");
